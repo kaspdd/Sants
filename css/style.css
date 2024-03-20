@@ -194,7 +194,7 @@ a{
 /*#endregion*/
 
 /*#region gallery*/
-#gallery{
+/* #gallery{
     background-color: var(--color-base);
 }
 
@@ -249,6 +249,6 @@ a{
     background-color: var(--color-title);
     color: var(--color-base);
     border-radius: 3px;
-}
+} */
 
 /*#endregion*/
