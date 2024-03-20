@@ -252,3 +252,21 @@ a{
 } */
 
 /*#endregion*/
+
+/* #region contact */
+
+#contact {
+    width: 100%;
+    height: 76vh;
+    background-color: var(--color-base);
+    padding: 5em;
+    
+}
+#contact h1 {
+    color: var(--color-segundary);  
+}
+
+.contactInner {
+    
+}
+/*#endregion*/
