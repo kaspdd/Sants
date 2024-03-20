@@ -1,0 +1,254 @@
+
+/* #region global */
+
+/* font */
+*{
+    font-family: 'mukta vaani';
+}
+
+/* sizes */
+:root{
+    --super-hero:5rem;
+    --title-defaut:3rem;
+    --subtitle-defaut:2rem;
+    --table-title:1.8em;
+    --paragraph-defaut:1.5em;
+    --anchor-defaut:1.2em;
+}
+
+/* colors */
+:root{
+    --color-defaut: rgba(89, 114, 195, 0.568);
+    --color-primary:#f7f2fe;
+    --color-segundary:#f5a3e9;
+    --color-tertiary: #f14e85; 
+    --color-base:rgb(41, 49, 132);
+    --color-bg:rgba(0, 0, 0, 0.459);
+    --color-detail:rgb(254, 255, 188);
+    --color-table:rgba(173, 204, 255, 0.925);
+    --color-text-box:#08094b;
+    --color-text-box-focus:#f7f2ee;
+    --color-bg-footer:rgb(85, 58, 162);
+    --color-card:rgba(0, 0, 0, 0.377);
+    --color-btn:rgb(120, 153, 251);
+    --color-btn-hover:transparent;
+    --color-detail6:rgba(74, 77, 236, 0.863);
+}
+
+/* resources */
+:root{
+    font-size: 18px;
+    /* overflow:hidden server para trvar o scrool do mouse, ele nao funcionara */
+    overflow: scroll;
+    /* scroll-behavior serve para suavizar a transicao entre as sections */
+    scroll-behavior: smooth;
+    color: var(--color-segundary);
+}
+
+/* body */
+body{
+    font-size: 16px;
+    background-color: var(--color-defaut);
+}
+
+section{
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    font-size: var(--title-defaut);
+}
+
+h2{
+    font-size: var(--subtitle-defaut);
+}
+
+p{
+    font-size: var(--paragraph-defaut);
+}
+
+
+a{
+    font-size: var(--anchor-defaut);
+    color: var(--color-segundary);
+    transition: .5s;
+}
+
+:hover{
+    transition: .5s;
+}
+
+/* #endregion */
+
+
+/* #region navbar */
+.navbar{
+    background-color: var(--color-card) !important;
+    z-index: 99;
+    position: fixed !important; 
+    width: 100%;
+}
+
+.navbarBrand{
+    color: var(--color-segundary) !important;
+    font-size: var(--subtitle-defaut) !important;
+    font-weight: 120;
+    text-align: center;
+}
+
+.navLink {
+    color: var(--color-primary) !important;
+    font-size: var(--paragraph-defaut) !important;
+    transition: .5s;
+}
+
+.navLink:hover {
+    color: var(--color-tertiary) !important;
+    transition: .5s;
+}
+
+.icone{
+    text-align: center;
+    padding: .2em;
+    width: 50px;
+}
+
+.navbarLine{
+    padding: 0 1em;
+}
+
+
+
+/* #endregion */
+
+/*#region home*/
+/* Para chamar o ID usa-se '#' */
+#home{
+    background-image: url('../img/home.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.homeContainer{
+    height: 100vh;
+    line-height: 100vh;
+    width: 100%;
+    background-color: var(--color-bg);
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+}
+
+.homeInner{
+    background-color: var(--color-card);
+    display: flex;
+    /* flex-direction: column; serve para mudar a forma que os elementos serao enquadrados, nesse caso sera em coluna (um em cima do outro) */
+    flex-direction: column;
+    /* ao usar o z-index precisa tambem colocar as propriedades de tamanho do elemento para que ele apareca na tela */
+    z-index: 98;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    top: 0;
+    text-align: center;
+
+}
+
+.homeContainer h1{
+    font-size: var(--super-hero);
+    color: var(--color-segundary);
+    font-weight: 300;
+}
+/*#endregion*/
+
+/*#region about*/
+#about{
+    position: relative;
+    background-color: var(--color-default);
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.aboutContainer{
+    position: absolute;
+    top: 20;
+    width: 100%;
+    height: 100vh;
+}
+
+#about video{
+
+    height: 100vh;
+}
+
+.aboutContainer h1{
+    font-size: var(--text-logo);
+    color: var(--color-title);
+    background-color: var(--color-bg);
+}
+
+
+/*#endregion*/
+
+/*#region gallery*/
+#gallery{
+    background-color: var(--color-base);
+}
+
+.galleryContainer{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    column-gap: .8em;
+    row-gap: .6em;
+    padding: 0 12em;
+}
+
+.galleryInner{
+    width: 20%;
+    padding: .5em;
+}
+
+.galleryInner img{
+    width: 100%;
+    height: auto;
+    transition: .5s;
+    filter: brightness(50%) saturate(0%);
+}
+
+.galleryInner img:hover{
+    filter: saturate(100%);
+}
+
+.filter{
+    width: 100%;
+    text-align: center;
+    padding: 2em;
+}
+
+.filter li{
+    display: inline;
+    padding: .8em 1.8em;
+    font-size: var(--text-paragraph);
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    transition: .5s;
+    color: var(--color-title);
+}
+
+.filter li:hover{
+    color: var(--color-tertiary);
+}
+
+.filter li.active{
+    background-color: var(--color-title);
+    color: var(--color-base);
+    border-radius: 3px;
+}
+
+/*#endregion*/
