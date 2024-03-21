@@ -4,6 +4,8 @@
 /* font */
 *{
     font-family: 'mukta vaani';
+    list-style: none;
+    text-decoration: none;
 }
 
 /* sizes */
@@ -14,6 +16,7 @@
     --table-title:1.8em;
     --paragraph-defaut:1.5em;
     --anchor-defaut:1.2em;
+    --footer-defaut:1em;
 }
 
 /* colors */
@@ -73,6 +76,8 @@ a{
     font-size: var(--anchor-defaut);
     color: var(--color-segundary);
     transition: .5s;
+    text-decoration: none;
+
 }
 
 :hover{
@@ -193,6 +198,8 @@ a{
 
 /*#endregion*/
 
+
+
 /*#region gallery*/
 /* #gallery{
     background-color: var(--color-base);
@@ -253,20 +260,109 @@ a{
 
 /*#endregion*/
 
+/*#region services*/
+
+#services {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding: 8em;
+    background-color: var(--color-bg-footer);
+}
+
+#services h1{
+    color: var(--color-primary); 
+}
+
+.servicesContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 5em;
+
+}
+
+
+
+/* #endregion */
+
 /* #region contact */
 
 #contact {
     width: 100%;
     height: 76vh;
     background-color: var(--color-base);
-    padding: 5em;
+    padding: 8em;
+    text-align: center;
     
 }
 #contact h1 {
-    color: var(--color-segundary);  
+    color: var(--color-primary);  
 }
 
-.contactInner {
+.contactInner span{
+    color: var(--color-primary);
+}
+
+.btnDefault{
+    border: 1px solid var(--color-btn-hover);
+    border-radius: 5px;
+    background-color: var(--color-btn);
+    padding: .8em 2em;
+    transition: .5s;
+    color: var(--color-primary);
+}
+
+.btnDefault:hover{
+    border: 1px solid var(--color-tertiary);
+    background-color: var(--color-btn-hover);
+    color: var(--color-primary);
+}
+
+/*#endregion*/
+
+/* #region footer */
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--color-bg-footer);
+    padding: 1rem;
+    font-size: var(--footer-defaut);
+    position: relative;
+}
+
+.footerContainer{
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     
 }
-/*#endregion*/
+
+.footerContainer a{
+    height: 1.5rem;
+    line-height: 1.5rem;
+    transition: .5s;
+    opacity: .6;
+    color: var(--color-primary);
+}
+
+.footerContainer a:hover{
+    opacity: 1;
+    transition: .5s;
+    
+}
+
+
+.footerContainer h5 {
+    color: var(--color-primary);
+}
+
+.navbarBrand {
+    padding-bottom: .2rem;
+}
+
+
+/* #endregion */
