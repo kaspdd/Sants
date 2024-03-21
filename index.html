@@ -49,16 +49,16 @@
                             <a class="nav-link active navLink" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item navbarLine">
-                            <a class="nav-link navLink" href="#about">About</a>
+                            <a class="nav-link navLink" href="#about">Sobre</a>
                         </li>
                         <li class="nav-item navbarLine">
-                            <a class="nav-link navLink" href="#gallery">Gallery</a>
+                            <a class="nav-link navLink" href="#gallery">Galeria</a>
                         </li>
                         <li class="nav-item navbarLine">
-                            <a class="nav-link navLink" href="#services">Services</a>
+                            <a class="nav-link navLink" href="#services">Serviços</a>
                         </li>
                         <li class="nav-item navbarLine">
-                            <a class="nav-link navLink" href="#contact">Contact</a>
+                            <a class="nav-link navLink" href="#contact">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -79,16 +79,24 @@
 
         <section id="about">
             <div class="aboutContainer">
-                <h1>About <span> us</span></h1>
+                <h1>Sobre a <span> Sants</span></h1>
+                <ul>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error mollitia sunt asperiores.
+                            Perferendis ut temporibus autem cum recusandae tempora molestiae quos, est officiis vitae.
+                            Soluta aliquid sequi ipsum ex earum!</p>
+                    </li>
+                    <li><a href="#gallery"><input type="button" value="Portfólio" class="btnDefault"></a></li>
+                </ul>
             </div>
-            <video src="video/Cake.mp4" controls></video>
+            <video src="video/Cake.mp4" muted id="video"></video>
         </section>
 
         <section id="gallery">
             <div class="filter filterGroup">
                 <ul>
                     <h4>
-                        <li class="active" data-filter="*">All</li>
+                        <li class="active" data-filter="*">Todos</li>
                         <li data-filter=".bolo">Bolos</li>
                         <li data-filter=".doce">Doces</li>
                         <li data-filter=".pascoa">Páscoa</li>
@@ -179,63 +187,88 @@
         </section>
 
         <section id="services">
-
+            <h1>Nossos serviços</h1>
+            <div class="servicesContainer">
+                <!-- card 1 cursos Doces finos -->
+                <div class="card" style="width: 18rem;">
+                    <img src="img/docesFinos.jpg" class="card-img-top" alt="doces finos">
+                    <div class="card-body">
+                        <h4 class="card-title">Curso de Doces finos</h4>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quia porro velit doloremque!</p>
+                        <a href="#" class="btn btn-primary btnDefault">Compre já</a>
+                    </div>
+                </div>
+                <!-- card 2 bolos decorados -->
+                <div class="card" style="width: 18rem;">
+                    <img src="img/bolosDecorados.jpg" class="card-img-top" alt="bolos decorados">
+                    <div class="card-body">
+                        <h4 class="card-title">Cursos de bolos decorados do zero!</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus iste  culpa.</p>
+                        <a href="#" class="btn btn-primary btnDefault">Compre já</a>
+                    </div>
+                </div>
+                <!-- card 3 clube sants -->
+                <div class="card" style="width: 18rem;">
+                    <img src="img/clubeSants.jpg" class="card-img-top" alt="clube sants">
+                    <div class="card-body">
+                        <h4 class="card-title">Clube Sants</h4>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat numquam deserunt incidunt magnam est cum?</p>
+                        <a href="#" class="btn btn-primary btnDefault"><i class='bx bxl-whatsapp'></i></a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- contact -->
         <section id="contact">
-            <h1>Entre em contato!</h1>
+            <h1>Entre em contato conosco!</h1>
             <div class="container contactInner">
                 <form class="row g-3">
                     <div class="col-12">
                         <label for="inputAddress" class="form-label"></label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="Nome:">
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Nome">
                     </div>
                     <div class="col-md-12">
                         <label for="inputEmail4" class="form-label"></label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email:">
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
                     </div>
                     <div class="col-12">
                         <label for="exampleFormControlTextarea1" class="form-label"></label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
-                            placeholder="Digite sua mensagem:"></textarea>
+                            placeholder="Digite sua mensagem"></textarea>
                     </div>
                     <div class="col-12">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Eu concordo com as politicas de privacidade.
-                            </label>
+                            <input type="checkbox" name="" id="">
+                            <span>Eu concordo com as politicas de privacidade.</span>
                         </div>
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Sign in</button>
+                        <button type="submit" class="btnDefault">Enviar</button>
                     </div>
+                    <input type="hidden" name="accessKey" value="myAccessKey">
+                    <input type="hidden" name="redirectTo" value="urlThanks">
                 </form>
             </div>
         </section>
+
         <!-- footer -->
         <footer>
-            <div class="card bg-black text-light">
-                <div class="container">
-                    <div class="card-header">
-                        Featured
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Powered by Pig house</h5>
-                        <p class="card-text">&copy; Copyright all right reserved 2012
-                        </p>
-                        <a href="#" class="btn btn-outline-primary text-light">Read More</a>
-                    </div>
-                </div>
+            <div class="footerContainer">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                <h5>&copy; Copyright all rights reserved 2018.</h5>
+                <!-- logo -->
+                <a class="navbar-brand navbarBrand" href="#home"><img class="icone" src="img/cupcake1.png"
+                        alt="cupcake"> Sants</a>
             </div>
         </footer>
     </main>
-
-
-
-
-
 
     <!-- scripts -->
     <!-- jQuery -->
