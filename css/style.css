@@ -43,7 +43,7 @@
 :root{
     font-size: 18px;
     /* overflow:hidden server para trvar o scrool do mouse, ele nao funcionara */
-    overflow: hidden;
+    /* overflow: hidden; */
     /* scroll-behavior serve para suavizar a transicao entre as sections */
     scroll-behavior: smooth;
     color: var(--color-segundary);
@@ -52,7 +52,7 @@
 /* body */
 body{
     font-size: 16px;
-    background-color: var(--color-defaut);
+    background-color: var(--color-segundary);
 }
 
 section{
@@ -91,6 +91,7 @@ a{
     z-index: 99;
     position: fixed !important; 
     width: 100%;
+    
 }
 
 .navbarBrand{
@@ -98,6 +99,7 @@ a{
     font-size: var(--subtitle-defaut) !important;
     font-weight: 120;
     text-align: center;
+
 }
 
 .navLink {
@@ -138,10 +140,11 @@ a{
     display: flex;
     text-align: center;
     align-items: center;
+    justify-content: center;
 }
 
 .homeInner{
-    background-color: var(--color-card);
+    
     display: flex;
     /* flex-direction: column; serve para mudar a forma que os elementos serao enquadrados, nesse caso sera em coluna (um em cima do outro) */
     flex-direction: column;
@@ -149,7 +152,6 @@ a{
     z-index: 98;
     width: 100%;
     height: 100%;
-    justify-content: center;
     top: 0;
     text-align: center;
 }
@@ -167,22 +169,29 @@ a{
     height: 100vh;
     position: relative;
     background-color: var(--color-detail6);
-    flex-direction: row;
-    display: flex;
 }
 
 .aboutContainer {
-    position: absolute;
     background-color: var(--color-bg-2);
+    position: absolute;
     display: flex;
-    flex-direction: column;
-    z-index: 98;
-    justify-content: center;
-    top: 0;
-    text-align: center;
+    flex-direction: column ;
     width: 100%;
-    height: 100%;
-    
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 98;
+}
+
+.aboutInner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+
+    width: 50%;
+    flex-basis: 50%;
 }
 
 #about video{
@@ -201,18 +210,12 @@ a{
     text-transform: capitalize;
 }
 
-.aboutContainer ul{
-    justify-content: center;
-    text-align: center;
-    justify-items: center;
-    width: 100%;
-}
 
 .aboutContainer p{
-    margin: 0 17em;
+    /* margin: 0 17em;
     padding: 1em 0;
     font-weight: 100;
-    width: 50%;
+    width: 50%; */
     font-size: var(--table-title);
     color: var(--color-primary);
 }
@@ -229,13 +232,16 @@ a{
 }
 
 .galleryContainer{
+    
     width: 100%;
-    height: auto;
+    height: 100vh;
     display: grid;
     grid-template-columns: 23% 23% 23% 23%;
     column-gap: .8em;
     row-gap: 2em;
     padding: 0 12em;
+    
+    
 }
 
 .galleryInner{
@@ -327,7 +333,7 @@ a{
 
 #contact {
     width: 100%;
-    height: 76vh;
+    height: 80vh;
     background-color: var(--color-base);
     padding: 8em;
     text-align: center;

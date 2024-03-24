@@ -66,34 +66,99 @@
         </nav>
 
     </header>
+    <!-- <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container navbarContainer">
+            <a href="#home">
+                <img class="icone" src="img/cupcake1.png" alt="cupcake">
+            </a>
+            <a class="navbar-brand navbarBrand" href="#home">Sants</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-my">
+              <li class="nav-item">
+                <a class="nav-link active navLink" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navLink" href="#about">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navLink" href="#gallery">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navLink" href="#services">Servicos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navLink" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> -->
 
     <main>
         <!-- home -->
-        <section id="home">
+        <!-- <section id="home">
             <div class="homeContainer">
                 <div class="homeInner">
                     <h1>Sants Confeitaria</h1>
                 </div>
             </div>
+        </section> -->
+        <section id="home" class="d-flex align-items-center">
+            <div class="container-fluid homeContainer text-center position-relative">
+                <h1>Sants Confeitaria</h1>
+            </div>
         </section>
 
+
+        <!-- about -->
+        <!-- <section id="about">
+            <div class="container ">
+                <div class="aboutContainer">
+                    <h1>Sobre a <span> Sants</span></h1>
+                    <ul>
+                        <li>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error mollitia sunt asperiores.
+                                Perferendis ut temporibus autem cum recusandae tempora molestiae quos, est officiis
+                                vitae.
+                                Soluta aliquid sequi ipsum ex earum!</p>
+                        </li>
+                        <li><a href="#gallery"><input type="button" value="Portfólio" class="btnDefault"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <video src="video/Cake.mp4" muted id="video"></video>
+        </section> -->
+
         <section id="about">
-            <div class="aboutContainer">
+
+            <div class="container-fluid aboutContainer">
                 <h1>Sobre a <span> Sants</span></h1>
-                <ul>
-                    <li>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error mollitia sunt asperiores.
-                            Perferendis ut temporibus autem cum recusandae tempora molestiae quos, est officiis vitae.
-                            Soluta aliquid sequi ipsum ex earum!</p>
-                    </li>
-                    <li><a href="#gallery"><input type="button" value="Portfólio" class="btnDefault"></a></li>
-                </ul>
+                <div class="row justify-content-md-center ">
+                    <div class="col-lg-6">
+                        <ul>
+                            <li>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error mollitia sunt
+                                    asperiores.
+                                    Perferendis ut temporibus autem cum recusandae tempora molestiae quos, est officiis
+                                    vitae.
+                                    Soluta aliquid sequi ipsum ex earum!</p>
+                            </li>
+                            <li><a href="#gallery"><input type="button" value="Portfólio" class="btnDefault"></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <video src="video/Cake.mp4" muted id="video"></video>
         </section>
 
+        <!-- galery -->
+
         <section id="gallery">
-            <div class="filter filterGroup">
+            <div class="container-fluid filter filterGroup">
                 <ul>
                     <h4>
                         <li class="active" data-filter="*">Todos</li>
@@ -105,84 +170,86 @@
             </div>
 
             <!-- Grid -->
-            <div class="galleryContainer grid">
-                <!--Line1 - bolo -->
-                <div class="galleryInner item bolo">
-                    <a href="img/bolo1.jpg" data-lightbox="bolo" data-title="bolo">
-                        <img src="img/bolo1Thumb.jpg" alt="bolo">
-                    </a>
-                </div>
+            <div class="container-fluid">
+                <div class="row galleryContainer grid" >
+                    <!--Line1 - bolo -->
+                    <div class="col-lg-3 col-md-5 galleryInner item bolo">
+                        <a href="img/bolo1.jpg" data-lightbox="bolo" data-title="bolo">
+                            <img src="img/bolo1Thumb.jpg" class="img-fluid" alt="bolo">
+                        </a>
+                    </div>
 
-                <div class="galleryInner item bolo">
-                    <a href="img/bolo2.jpg" data-lightbox="bolo" data-title="bolo">
-                        <img src="img/bolo2Thumb.jpg" alt="bolo">
-                    </a>
-                </div>
+                    <div class="col-lg-3 col-md-5 galleryInner item bolo">
+                        <a href="img/bolo2.jpg" data-lightbox="bolo" data-title="bolo">
+                            <img src="img/bolo2Thumb.jpg" class="img-fluid" alt="bolo">
+                        </a>
+                    </div>
 
-                <div class="galleryInner item bolo">
-                    <a href="img/bolo3.jpg" data-lightbox="bolo" data-title="bolo">
-                        <img src="img/bolo3Thumb.jpg" alt="bolo">
-                    </a>
-                </div>
+                    <div class="col-lg-3 col-md-5 galleryInner item bolo">
+                        <a href="img/bolo3.jpg" data-lightbox="bolo" data-title="bolo">
+                            <img src="img/bolo3Thumb.jpg" class="img-fluid" alt="bolo">
+                        </a>
+                    </div>
 
-                <div class="galleryInner item bolo">
-                    <a href="img/bolo4.jpg" data-lightbox="bolo" data-title="bolo">
-                        <img src="img/bolo4Thumb.png" alt="bolo">
-                    </a>
-                </div>
-                <!---->
+                    <div class="col-lg-3 col-md-5 galleryInner item bolo">
+                        <a href="img/bolo4.jpg" data-lightbox="bolo" data-title="bolo">
+                            <img src="img/bolo4Thumb.png" class="img-fluid" alt="bolo">
+                        </a>
+                    </div>
+                    <!---->
 
-                <!--Line2 - doces -->
-                <div class="galleryInner item doce">
-                    <a href="img/doce1.jpg" data-lightbox="doce" data-title="doce">
-                        <img src="img/doce1Thumb.png" alt="doce">
-                    </a>
-                </div>
+                    <!--Line2 - doces -->
+                    <div class="col-lg-3 col-md-5 galleryInner item doce">
+                        <a href="img/doce1.jpg" data-lightbox="doce" data-title="doce">
+                            <img src="img/doce1Thumb.png" class="img-fluid" alt="doce">
+                        </a>
+                    </div>
 
-                <div class="galleryInner item doce">
-                    <a href="img/doce2.jpg" data-lightbox="doce" data-title="doce">
-                        <img src="img/doce2Thumb.png" alt="doce">
-                    </a>
-                </div>
+                    <div class="col-lg-3 col-md-5 galleryInner item doce">
+                        <a href="img/doce2.jpg" data-lightbox="doce" data-title="doce">
+                            <img src="img/doce2Thumb.png" class="img-fluid" alt="doce">
+                        </a>
+                    </div>
 
-                <div class="galleryInner item doce">
-                    <a href="img/doce3.jpg" data-lightbox="doce" data-title="doce">
-                        <img src="img/doce3Thumb.png" alt="doce">
-                    </a>
-                </div>
+                    <div class="col-lg-3 col-md-5 galleryInner item doce">
+                        <a href="img/doce3.jpg" data-lightbox="doce" data-title="doce">
+                            <img src="img/doce3Thumb.png" class="img-fluid" alt="doce">
+                        </a>
+                    </div>
 
-                <div class="galleryInner item doce">
-                    <a href="img/doce4.jpg" data-lightbox="doce" data-title="doce">
-                        <img src="img/doce4Thumb.png" alt="doce">
-                    </a>
-                </div>
-                <!---->
+                    <div class="col-lg-3 col-md-5 galleryInner item doce">
+                        <a href="img/doce4.jpg" data-lightbox="doce" data-title="doce">
+                            <img src="img/doce4Thumb.png" class="img-fluid" alt="doce">
+                        </a>
+                    </div>
+                    <!---->
 
-                <!--Line3 - pascoa -->
-                <div class="galleryInner item pascoa">
-                    <a href="img/pascoa1.jpg" data-lightbox="pascoa" data-title="pascoa">
-                        <img src="img/pascoa1Thumb.png" alt="pascoa">
-                    </a>
-                </div>
+                    <!--Line3 - pascoa -->
+                    <div class="col-lg-3 col-md-5 galleryInner item pascoa">
+                        <a href="img/pascoa1.jpg" data-lightbox="pascoa" data-title="pascoa">
+                            <img src="img/pascoa1Thumb.png" class="img-fluid" alt="pascoa">
+                        </a>
+                    </div>
 
-                <div class="galleryInner item pascoa">
-                    <a href="img/pascoa2.jpg" data-lightbox="pascoa" data-title="pascoa">
-                        <img src="img/pascoa2Thumb.png" alt="pascoa">
-                    </a>
-                </div>
+                    <div class="col-lg-3 col-md-5 galleryInner item pascoa">
+                        <a href="img/pascoa2.jpg" data-lightbox="pascoa" data-title="pascoa">
+                            <img src="img/pascoa2Thumb.png" class="img-fluid" alt="pascoa">
+                        </a>
+                    </div>
 
-                <div class="galleryInner item pascoa">
-                    <a href="img/pascoa3.jpg" data-lightbox="pascoa" data-title="pascoa">
-                        <img src="img/pascoa3Thumb.png" alt="pascoa">
-                    </a>
-                </div>
+                    <div class="col-lg-3 col-md-5 galleryInner item pascoa">
+                        <a href="img/pascoa3.jpg" data-lightbox="pascoa" data-title="pascoa">
+                            <img src="img/pascoa3Thumb.png" class="img-fluid" alt="pascoa">
+                        </a>
+                    </div>
 
-                <div class="galleryInner item pascoa">
-                    <a href="img/pascoa4.jpg" data-lightbox="pascoa" data-title="pascoa">
-                        <img src="img/pascoa4Thumb.png" alt="pascoa">
-                    </a>
+                    <div class="col-lg-3 col-md-5 galleryInner item pascoa">
+                        <a href="img/pascoa4.jpg" data-lightbox="pascoa" data-title="pascoa">
+                            <img src="img/pascoa4Thumb.png" class="img-fluid" alt="pascoa">
+                        </a>
+                    </div>
+                    <!---->
                 </div>
-                <!---->
             </div>
         </section>
 
@@ -194,7 +261,8 @@
                     <img src="img/docesFinos.jpg" class="card-img-top" alt="doces finos">
                     <div class="card-body">
                         <h4 class="card-title">Curso de Doces finos</h4>
-                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quia porro velit doloremque!</p>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quia
+                            porro velit doloremque!</p>
                         <a href="#" class="btn btn-primary btnDefault">Compre já</a>
                     </div>
                 </div>
@@ -203,7 +271,8 @@
                     <img src="img/bolosDecorados.jpg" class="card-img-top" alt="bolos decorados">
                     <div class="card-body">
                         <h4 class="card-title">Cursos de bolos decorados do zero!</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus iste  culpa.</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil natus iste
+                            culpa.</p>
                         <a href="#" class="btn btn-primary btnDefault">Compre já</a>
                     </div>
                 </div>
@@ -212,7 +281,8 @@
                     <img src="img/clubeSants.jpg" class="card-img-top" alt="clube sants">
                     <div class="card-body">
                         <h4 class="card-title">Clube Sants</h4>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat numquam deserunt incidunt magnam est cum?</p>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat numquam
+                            deserunt incidunt magnam est cum?</p>
                         <a href="#" class="btn btn-primary btnDefault"><i class='bx bxl-whatsapp'></i></a>
                     </div>
                 </div>
